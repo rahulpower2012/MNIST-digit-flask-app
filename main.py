@@ -12,7 +12,7 @@ app = Flask(__name__)
 model = keras.models.load_model('my_model3.h5')
 
 # Handle GET request
-@app.route('/', methods=['GET'])
+@app.route('/')
 def drawing():
     return render_template('canvas.html')
 
